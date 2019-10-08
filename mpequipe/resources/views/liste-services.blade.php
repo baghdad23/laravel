@@ -21,22 +21,32 @@
     <button type="submit" id="connexion">SE CONNECTER</button>
 </head>
 <main>
-    <h3>SECTION ESPACE MEMBRE</h3>
-    <div>
-        <img src="../public/assets/images/sansPhoto.png">
-        <div>  
-            <h4>Michel</h4>
-            <p>Inscrit depuis le 13 October 2017</p>
-            <p>Description du service : Je peux aider pour tout type de réparation, menuiserie, electricité, etc</p>
-            <p>Nombre de services rendus = 0</p>
-            <p>Nombre de services reçus = 0</p>
-            <p>Commentaires = 0</p>
-            <p>Nombre de crédits = 3</p>
+    <h3>SECTION LISTE SERVICES</h3>
+    <button type="submit">VOIR CARTE</button>
+    <div class="carteService">
+        <img src="../public/assets/images/sansPhoto.png" title="">
+        <div>
+        <h4>Michel</h4>
+        <p>Description du service : Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+        <button type="submit">VOIR</button>
         </div>
-        <button type="submit">COMMENTER</button>
-        <button type="submit">CONTACTER</button>
     </div>
-
+    <div class="carteService">
+        <img src="../public/assets/images/sansPhoto.png" title="">
+        <div>
+        <h4>Michel</h4>
+        <p>Description du service : Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+        <button type="submit">VOIR</button>
+        </div>
+    </div>
+    <div class="carteService">
+        <img src="../public/assets/images/sansPhoto.png" title="">
+        <div>
+        <h4>Michel</h4>
+        <p>Description du service : Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+        <button type="submit">VOIR</button>
+        </div>
+    </div>
 </main>
 <footer>
     <p>XXX est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>

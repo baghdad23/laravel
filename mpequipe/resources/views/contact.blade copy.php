@@ -21,21 +21,7 @@
     <button type="submit" id="connexion">SE CONNECTER</button>
 </head>
 <main>
-    <h3>SECTION ESPACE MEMBRE</h3>
-    <div>
-        <img src="../public/assets/images/sansPhoto.png">
-        <div>  
-            <h4>Michel</h4>
-            <p>Inscrit depuis le 13 October 2017</p>
-            <p>Description du service : Je peux aider pour tout type de réparation, menuiserie, electricité, etc</p>
-            <p>Nombre de services rendus = 0</p>
-            <p>Nombre de services reçus = 0</p>
-            <p>Commentaires = 0</p>
-            <p>Nombre de crédits = 3</p>
-        </div>
-        <button type="submit">COMMENTER</button>
-        <button type="submit">CONTACTER</button>
-    </div>
+    <h3>SECTION CONTACT</h3>
 
 </main>
 <footer>

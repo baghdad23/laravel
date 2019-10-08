@@ -92,104 +92,105 @@
                     <option>Manucure - Ongles</option>
                 </optgroup>
             </select>
-            <section id="categories">
-                <h3>CATEGORIES</h3>
-                <div>
-                    <img src="../public/assets/images/iconAdministration.png" title="iconAdministration">
-                    <div>
-                        <h4>ADMINISTRATION</h4>
-                        <p>Aide à la rédaction, lettres, CV, corrections</p>
-                        <p>Aide administrative, impôts, question juridiques</p>
-                        <p>Comptabilité du foyer</p>
-                        <p>Traduction de documents</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconAideapersonne.png" title="iconAdministration">
-                    <div>
-                        <h4>AIDE A LA PERSONNE</h4>
-                        <p>Accompagnement – Aide aux personnes âgées</p>
-                        <p>Aide – Bras pour déménagement</p>
-                        <p>Aide aux personnes à mobilité réduite</p>
-                        <p>Courses à votre place – Aide aux courses</p>
-                        <p>Transport de personnes ou de matériel</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconAnimaux.png" title="iconAdministration">
-                    <div>
-                        <h4>ANIMAUX DE COMPAGNIE</h4>
-                        <p>Visite</p>
-                        <p>Garde</p>
-                        <p>Promenade</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconBricolage.png" title="iconAdministration">
-                    <div>
-                        <h4>BRICOLAGE</h4>
-                        <p>Électricité</p>
-                        <p>Mécanique (réparation, voiture, vélo, etc)</p>
-                        <p>Montage de meubles, étagères, etc.</p>
-                        <p>Peinture</p>
-                        <p>Plomberie</p>
-                        <p>Réparation petit matériel (précisez)</p>
-                        <p>Restauration</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconCours.png" title="iconAdministration">
-                    <div>
-                        <h4>COURS</h4>
-                        <p>Art et artisanat</p>
-                        <p>Musique, danse, chant</p>
-                        <p>Langues</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconEnfance.png" title="iconAdministration">
-                    <div>
-                        <h4>ENFANCE</h4>
-                        <p>Garde d'enfants</p>
-                        <p>Sortie d'école</p>
-                        <p>Aide au devoirs</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconMaison.png" title="iconAdministration">
-                    <div>
-                        <h4>MAISON</h4>
-                        <p>Aide au rangement</p>
-                        <p>Couture (reprises, broderie, machine, etc)</p>
-                        <p>Cuisine</p>
-                        <p>Jardinage – Arrosage – Conseils (précisez)</p>
-                        <p>Ménage – Repassage – Vitres</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconNumerique.png" title="iconAdministration">
-                    <div>
-                        <h4>NUMERIQUE</h4>
-                        <p>Graphisme (précisez)</p>
-                        <p>Informatique (word, excel, logiciels divers)</p>
-                        <p>Petit dépannage informatique (précisez)</p>
-                        <p>Photographie, retouches (précisez)</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="../public/assets/images/iconSante.png" title="iconAdministration">
-                    <div>
-                        <h4>SANTÉ/BEAUTÉ</h4>
-                        <p>Conseil nutrition – Diététique</p>
-                        <p>Maquillage</p>
-                        <p>Coupe – Soins cheveux – Coiffure</p>
-                        <p>Techniques relaxation</p>
-                        <p>Manucure - Ongles</p>
-                    </div>
-                </div>
-            </section>
+            <button type="submit">CHERCHER</button>
         </form>
     </section>
+        <section id="categories">
+            <h3>CATEGORIES</h3>
+            <div>
+                <img src="../public/assets/images/iconAdministration.png" title="iconAdministration">
+                <div>
+                    <h4>ADMINISTRATION</h4>
+                    <p>Aide à la rédaction, lettres, CV, corrections</p>
+                    <p>Aide administrative, impôts, question juridiques</p>
+                    <p>Comptabilité du foyer</p>
+                    <p>Traduction de documents</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconAideapersonne.png" title="iconAdministration">
+                <div>
+                    <h4>AIDE A LA PERSONNE</h4>
+                    <p>Accompagnement – Aide aux personnes âgées</p>
+                    <p>Aide – Bras pour déménagement</p>
+                    <p>Aide aux personnes à mobilité réduite</p>
+                    <p>Courses à votre place – Aide aux courses</p>
+                    <p>Transport de personnes ou de matériel</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconAnimaux.png" title="iconAdministration">
+                <div>
+                    <h4>ANIMAUX DE COMPAGNIE</h4>
+                    <p>Visite</p>
+                    <p>Garde</p>
+                    <p>Promenade</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconBricolage.png" title="iconAdministration">
+                <div>
+                    <h4>BRICOLAGE</h4>
+                    <p>Électricité</p>
+                    <p>Mécanique (réparation, voiture, vélo, etc)</p>
+                    <p>Montage de meubles, étagères, etc.</p>
+                    <p>Peinture</p>
+                    <p>Plomberie</p>
+                    <p>Réparation petit matériel (précisez)</p>
+                    <p>Restauration</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconCours.png" title="iconAdministration">
+                <div>
+                    <h4>COURS</h4>
+                    <p>Art et artisanat</p>
+                    <p>Musique, danse, chant</p>
+                    <p>Langues</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconEnfance.png" title="iconAdministration">
+                <div>
+                    <h4>ENFANCE</h4>
+                    <p>Garde d'enfants</p>
+                    <p>Sortie d'école</p>
+                    <p>Aide au devoirs</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconMaison.png" title="iconAdministration">
+                <div>
+                    <h4>MAISON</h4>
+                    <p>Aide au rangement</p>
+                    <p>Couture (reprises, broderie, machine, etc)</p>
+                    <p>Cuisine</p>
+                    <p>Jardinage – Arrosage – Conseils (précisez)</p>
+                    <p>Ménage – Repassage – Vitres</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconNumerique.png" title="iconAdministration">
+                <div>
+                    <h4>NUMERIQUE</h4>
+                    <p>Graphisme (précisez)</p>
+                    <p>Informatique (word, excel, logiciels divers)</p>
+                    <p>Petit dépannage informatique (précisez)</p>
+                    <p>Photographie, retouches (précisez)</p>
+                </div>
+            </div>
+            <div>
+                <img src="../public/assets/images/iconSante.png" title="iconAdministration">
+                <div>
+                    <h4>SANTÉ/BEAUTÉ</h4>
+                    <p>Conseil nutrition – Diététique</p>
+                    <p>Maquillage</p>
+                    <p>Coupe – Soins cheveux – Coiffure</p>
+                    <p>Techniques relaxation</p>
+                    <p>Manucure - Ongles</p>
+                </div>
+            </div>
+        </section>
 </main>
 <footer>
     <p>XXX est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
