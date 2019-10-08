@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LARAVEL projet</title>
+    <title>TROC</title>
 </head>
 <body>
 <head>
-    <h1>PROJET MAEKETPLACE</h1>
+    <h1>PROJET MARKETPLACE</h1>
     <a href="#"><img src="" id="logo"></a>
     <nav>
         <ul>
@@ -22,7 +22,7 @@
 </head>
 <main>
     <h3>SECTION ACCUEIL</h3>
-    <section>
+    <section id="rechercheService">
         <form method="GET" action="">
             <input type="radio" name="service" value="besoinService">
             <label>J'ai besoin d'un service</label>
@@ -92,7 +92,7 @@
                     <option>Manucure - Ongles</option>
                 </optgroup>
             </select>
-            <section>
+            <section id="categories">
                 <h3>CATEGORIES</h3>
                 <div>
                     <img src="../public/assets/images/iconAdministration.png" title="iconAdministration">
@@ -142,12 +142,49 @@
                     <div>
                         <h4>COURS</h4>
                         <p>Art et artisanat</p>
-                        <p>Mécanique (réparation, voiture, vélo, etc)</p>
-                        <p>Montage de meubles, étagères, etc.</p>
-                        <p>Peinture</p>
-                        <p>Plomberie</p>
-                        <p>Réparation petit matériel (précisez)</p>
-                        <p>Restauration</p>
+                        <p>Musique, danse, chant</p>
+                        <p>Langues</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../public/assets/images/iconEnfance.png" title="iconAdministration">
+                    <div>
+                        <h4>ENFANCE</h4>
+                        <p>Garde d'enfants</p>
+                        <p>Sortie d'école</p>
+                        <p>Aide au devoirs</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../public/assets/images/iconMaison.png" title="iconAdministration">
+                    <div>
+                        <h4>MAISON</h4>
+                        <p>Aide au rangement</p>
+                        <p>Couture (reprises, broderie, machine, etc)</p>
+                        <p>Cuisine</p>
+                        <p>Jardinage – Arrosage – Conseils (précisez)</p>
+                        <p>Ménage – Repassage – Vitres</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../public/assets/images/iconNumerique.png" title="iconAdministration">
+                    <div>
+                        <h4>NUMERIQUE</h4>
+                        <p>Graphisme (précisez)</p>
+                        <p>Informatique (word, excel, logiciels divers)</p>
+                        <p>Petit dépannage informatique (précisez)</p>
+                        <p>Photographie, retouches (précisez)</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../public/assets/images/iconSante.png" title="iconAdministration">
+                    <div>
+                        <h4>SANTÉ/BEAUTÉ</h4>
+                        <p>Conseil nutrition – Diététique</p>
+                        <p>Maquillage</p>
+                        <p>Coupe – Soins cheveux – Coiffure</p>
+                        <p>Techniques relaxation</p>
+                        <p>Manucure - Ongles</p>
                     </div>
                 </div>
             </section>
