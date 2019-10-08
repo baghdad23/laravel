@@ -24,29 +24,18 @@
     <h3>SECTION ESPACE MEMBRE</h3>
     <div>
         <img src="../public/assets/images/sansPhoto.png">
-        <h4>CREATE</h4>
-        <form method="POST" action="">  
-            <input type="texte" name="nom" placeholder="entrez votre nom" required>
-            <input type="date" name="dateInscription">
-            <input type="texte" name="service" placeholder="entrez le service" required>
-            <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
-            <input type="file" name="photo">
-            <button type="submit">PUBLIER</button>
-        </form>
-    </div>
-    <div>
-        <h4>MODIFIER</h4>
-        <form method="POST" action="">  
-            <input type="texte" name="nom" placeholder="entrez votre nom" required>
-            <input type="date" name="dateInscription">
-            <input type="texte" name="service" placeholder="entrez le service" required>
-            <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
-            <input type="file" name="photo">
-            <button type="submit">MODIFIER</button>
-        </form>
-    </div>
-
-
+        <div>  
+            <h4>Michel</h4>
+            <p>Inscrit depuis le 13 October 2017</p>
+            <p>Description du service : Je peux aider pour tout type de réparation, menuiserie, electricité, etc</p>
+            <p>Disponible: de lundi à jeudi à partir de 17h</p>
+            <p>Nombre de services rendus = 0</p>
+            <p>Nombre de services reçus = 0</p>
+            <p>Commentaires = 0</p>
+            <p>Nombre de crédits = 3</p>
+        </div>
+        <button type="submit">COMMENTER</button>
+        <button type="submit">CONTACTER</button>
     </div>
 
 </main>
