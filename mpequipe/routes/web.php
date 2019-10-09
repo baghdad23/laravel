@@ -20,3 +20,4 @@ Route::view('/contact', 'contact');
 Route::view('/espace-membre', 'espace-membre');
 Route::view('/espace-admin', 'espace-admin');
 Route::view('/liste-services', 'liste-services');
+Route::view('/profil', 'profil');

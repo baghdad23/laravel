@@ -1,0 +1,33 @@
+#profilImage img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+}
+#profilTexte {
+    padding: 10px 35px;
+}
+#profilTexte h4 {
+    color: #546a79;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+#profilTexte p {
+    font-size: 14px;
+}
+#profilBouton {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+#profilBouton button {
+    width: 100px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}

@@ -1,0 +1,77 @@
+#espaceMembre img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+}
+#espaceMembre button {
+    margin: 10px auto;
+    width: 120px;
+    height: 40px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
+#espaceMembre h4 {
+    color: #546a79;
+    margin: 5px;
+}
+#espaceMembreBouton {
+    display: flex;
+    justify-content: center;
+}
+#espaceMembreBouton button {
+    margin: 10px 10px;
+}
+.espaceMembreForm {
+    margin: 20px;
+}
+.espaceMembreForm form {
+    display: flex;
+    flex-direction: column;
+}
+.espaceMembreForm form input {
+    width: 98%;
+    height: 30px;
+    background-color: #cccccc;
+    border: none;
+    margin: 5px 0;
+    padding-left: 5px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.espaceMembreForm form textarea {
+    width: 98%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    border: none;
+    padding: 0 0 0 5px;
+    height: 100px;
+}
+.espaceMembreForm form input[type="file"] {
+    background-color: white;
+    padding: 0;
+}
+#espaceMembreListe {
+    margin: 20px;
+}
+#espaceMembreListe ul li {
+    list-style: none;
+    font-weight: bolder;
+}
+.service {
+    background-color: #d5b772;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.service p {
+    font-weight: bolder;
+    padding: 10px 0 0 10px;
+    margin: 0;
+}
+.boutonService {
+    display: flex;
+    justify-content: space-between;
+}

@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TROC</title>
+    <link rel="stylesheet" href="../public/assets/css/style-commun.css">
+    <link rel="stylesheet" href="../public/assets/css/style-accueil.css">
+    <title>TROC HOUR</title>
 </head>
 <body>
-<head>
-    <h1>PROJET MARKETPLACE</h1>
-    <a href="#"><img src="" id="logo"></a>
+<header>
+    <!--<h1>PROJET MARKETPLACE</h1>-->
+    <a href="#"  id="logo"><img src="../public/assets/images/logo.png"></a>
+    <div id="boutonsConnexion">
+        <button type="submit" id="inscription">S'INSCRIRE</button>
+        <button type="submit" id="connexion">SE CONNECTER</button>
+    </div>
     <nav>
-        <ul>
-            <li><a href="<?php echo url("/") ?>">accueil</a></li>
-            <li><a href="<?php echo url("/infos") ?>">Comment ça marche?</a></li>
-            <li><a href="<?php echo url("/contact") ?>">contact</a></li>
+        <ul id="menu">
+            <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
+            <li><a href="<?php echo url("/infos") ?>">COMMENT ÇA MARCHE?</a></li>
+            <li><a href="<?php echo url("/contact") ?>">CONTACT</a></li>
         </ul>
     </nav>
-    <button type="submit" id="inscription">S'INSCRIRE</button>
-    <button type="submit" id="connexion">SE CONNECTER</button>
-</head>
+</header>
 <main>
-    <h3>SECTION ACCUEIL</h3>
+    <!--<h3>SECTION ACCUEIL</h3>-->
     <section id="rechercheService">
         <form method="GET" action="">
-            <input type="radio" name="service" value="besoinService">
-            <label>J'ai besoin d'un service</label>
-            <input type="radio" name="service" value="rendreService">
-            <label>Je veux rendre un service</label>
+            <label>
+                <input type="radio" name="service" value="besoinService">
+                J'ai besoin d'un service
+            </label>
+            <label>
+                <input type="radio" name="service" value="rendreService">
+                Je veux rendre un service
+            </label>
             <select name="categorie" required>
                 <option value="" selected="selected">Type de service</option>
                 <optgroup label="ADMINISTRATION">
@@ -97,7 +105,7 @@
     </section>
         <section id="categories">
             <h3>CATEGORIES</h3>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconAdministration.png" title="iconAdministration">
                 <div>
                     <h4>ADMINISTRATION</h4>
@@ -107,7 +115,7 @@
                     <p>Traduction de documents</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconAideapersonne.png" title="iconAdministration">
                 <div>
                     <h4>AIDE A LA PERSONNE</h4>
@@ -118,7 +126,7 @@
                     <p>Transport de personnes ou de matériel</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconAnimaux.png" title="iconAdministration">
                 <div>
                     <h4>ANIMAUX DE COMPAGNIE</h4>
@@ -127,7 +135,7 @@
                     <p>Promenade</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconBricolage.png" title="iconAdministration">
                 <div>
                     <h4>BRICOLAGE</h4>
@@ -140,7 +148,7 @@
                     <p>Restauration</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconCours.png" title="iconAdministration">
                 <div>
                     <h4>COURS</h4>
@@ -149,7 +157,7 @@
                     <p>Langues</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconEnfance.png" title="iconAdministration">
                 <div>
                     <h4>ENFANCE</h4>
@@ -158,7 +166,7 @@
                     <p>Aide au devoirs</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconMaison.png" title="iconAdministration">
                 <div>
                     <h4>MAISON</h4>
@@ -169,7 +177,7 @@
                     <p>Ménage – Repassage – Vitres</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconNumerique.png" title="iconAdministration">
                 <div>
                     <h4>NUMERIQUE</h4>
@@ -179,7 +187,7 @@
                     <p>Photographie, retouches (précisez)</p>
                 </div>
             </div>
-            <div>
+            <div class="categorie">
                 <img src="../public/assets/images/iconSante.png" title="iconAdministration">
                 <div>
                     <h4>SANTÉ/BEAUTÉ</h4>
@@ -193,8 +201,8 @@
         </section>
 </main>
 <footer>
-    <p>XXX est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
-    <p>Vous pouvez nous soumettre des idées d’améliorations, suggérer des services manquants ou signaler un abus : contact@labanquedetemps.com</p>
+    <p>Troc Hour est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
+    <p>Vous pouvez nous soumettre des idées d’améliorations, suggérer des services manquants ou signaler un abus : contact@troc-hour.com</p>
     <a href="#">Mentions légales</a>
     <a href="#">Conditions Générales d'Utilisation</a>
     <ul>

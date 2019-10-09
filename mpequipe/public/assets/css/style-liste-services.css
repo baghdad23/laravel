@@ -1,0 +1,60 @@
+#listeServices {
+    background-color: #d5b772;
+    padding-bottom: 10px;
+}
+#listeServices h3 {
+    margin: 0;
+    color: #546a79;
+    padding: 10px;
+
+}
+#liste {
+    display: flex;
+    justify-content: center;
+}
+#liste button {
+    margin: 10px auto;
+    width: 100px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
+.carteService {
+    background-color: white;
+    margin: 10px;
+    display: flex;
+}
+.carteService img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.carteTexte {
+    width: 60%;
+    padding: 10px;
+}
+.carteService h4 {
+    color: #546a79;
+}
+.carteService p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.carteImage {
+    width: 40%;
+}
+.carteImage button {
+    margin: 10px auto;
+    width: 100px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
