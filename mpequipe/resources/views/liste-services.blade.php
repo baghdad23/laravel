@@ -25,45 +25,51 @@
     </nav>
 </header>
 <main>
-    <section id="listeServices">
-        <div id="liste">
-            <h3>LISTE DE SERVICES</h3>
-            <button type="submit">VOIR CARTE</button>
-        </div>
-        <div class="carteService">
-            <div class="carteImage">
-                <img src="../public/assets/images/sansPhoto.png" title="">
-                <button type="submit">VOIR PROFIL</button>
+    <div id="container">
+        <section id="listeServices">
+            <div id="liste">
+                <h3>LISTE DE SERVICES</h3>
+                <button type="submit">VOIR CARTE</button>
             </div>
-            <div class="carteTexte">
-                <h4>Michel</h4>
-                <p>Description du service :</p>
-                <p> Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+            <div class="carteService">
+                <div class="carteImage">
+                    <img src="../public/assets/images/sansPhoto.png" title="">
+                    <button type="submit">VOIR PROFIL</button>
+                </div>
+                <div class="carteTexte">
+                    <h4>Michel</h4>
+                    <p>Description du service :</p>
+                    <p> Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+                </div>
             </div>
-        </div>
-        <div class="carteService">
-            <div class="carteImage">
-                <img src="../public/assets/images/sansPhoto.png" title="">
-                <button type="submit">VOIR PROFIL</button>
+            <div class="carteService">
+                <div class="carteImage">
+                    <img src="../public/assets/images/sansPhoto.png" title="">
+                    <button type="submit">VOIR PROFIL</button>
+                </div>
+                <div class="carteTexte">
+                    <h4>Michel</h4>
+                    <p>Description du service :</p>
+                    <p> Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+                </div>
             </div>
-            <div class="carteTexte">
-                <h4>Michel</h4>
-                <p>Description du service :</p>
-                <p> Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+            <div class="carteService">
+                <div class="carteImage">
+                    <img src="../public/assets/images/sansPhoto.png" title="">
+                    <button type="submit">VOIR PROFIL</button>
+                </div>
+                <div class="carteTexte">
+                    <h4>Michel</h4>
+                    <p>Description du service :</p>
+                    <p> Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
+                </div>
             </div>
-        </div>
-        <div class="carteService">
-            <div class="carteImage">
-                <img src="../public/assets/images/sansPhoto.png" title="">
-                <button type="submit">VOIR PROFIL</button>
-            </div>
-            <div class="carteTexte">
-                <h4>Michel</h4>
-                <p>Description du service :</p>
-                <p> Je peux aider pour tout type de réparation, menuiserie, electricité, etc.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+        <section id="map">
+            <div id="gps"></div>
+            <div id="my_osm_widget_map" class="map"></div>
+        </section>
+    </div>
 </main>
 <footer>
     <p>Troc Hour est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
@@ -75,6 +81,7 @@
         <li><a href="<?php echo url("/espace-admin") ?>">admin</a></li>
     </ul>
 </footer>
+<script src="../public/assets/js/appMap.js"></script>
     
 </body>
 </html>
