@@ -12,17 +12,19 @@
 <header>
     <!--<h1>PROJET MARKETPLACE</h1>-->
     <a href="#"  id="logo"><img src="../public/assets/images/logo.png"></a>
-    <div id="boutonsConnexion">
-        <button type="submit" id="inscription">S'INSCRIRE</button>
-        <button type="submit" id="connexion">SE CONNECTER</button>
+    <div>
+        <div id="boutonsConnexion">
+            <button type="submit" id="inscription">S'INSCRIRE</button>
+            <button type="submit" id="connexion">SE CONNECTER</button>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
+                <li><a href="<?php echo url("/infos") ?>">COMMENT ÇA MARCHE?</a></li>
+                <li><a href="<?php echo url("/contact") ?>">CONTACT</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul id="menu">
-            <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
-            <li><a href="<?php echo url("/infos") ?>">COMMENT ÇA MARCHE?</a></li>
-            <li><a href="<?php echo url("/contact") ?>">CONTACT</a></li>
-        </ul>
-    </nav>
 </header>
 <main>
     <div id="container">
