@@ -22,3 +22,4 @@ Route::view('/espace-admin', 'espace-admin');
 Route::view('/liste-services', 'liste-services');
 Route::view('/profil', 'profil');
 Route::view('/conditions-generales', 'conditions-generales');
+Route::view('/mentions-legales', 'mentions-legales');
