@@ -5,8 +5,7 @@
     display: block;
 }
 #espaceMembre button {
-    margin: 10px auto;
-    width: 120px;
+    width: 100px;
     height: 40px;
     background-color: #546a79;
     border: none;
@@ -17,7 +16,7 @@
 }
 #espaceMembre h4 {
     color: #546a79;
-    margin: 5px;
+    margin: 20px;
 }
 #espaceMembreBouton {
     display: flex;
@@ -32,6 +31,9 @@
 .espaceMembreForm form {
     display: flex;
     flex-direction: column;
+}
+.espaceMembreForm form button {
+    margin: auto;
 }
 .espaceMembreForm form input {
     width: 98%;
@@ -74,4 +76,27 @@
 .boutonService {
     display: flex;
     justify-content: space-between;
+}
+.boutonService button {
+    margin: 10px;
+}
+@media (min-width: 768px) {
+    .espaceMembreForm {
+        margin: 20px auto;
+        width: 50%;
+    }
+    #espaceMembreListe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service {
+        width: 30%;
+        margin: 10px 5px;
+    }
+}
+@media (min-width: 768px) {
+    .espaceMembreForm {
+        width: 40%;
+    }
 }

@@ -1,5 +1,5 @@
 //Requête vers l'API Openstreetmap
-const URLCity = `https://nominatim.openstreetmap.org/search?q=chicago&format=json`;
+const URLCity = `https://nominatim.openstreetmap.org/search?q=marseille&format=json`;
 fetch(URLCity)
 .then(responseFromServer => responseFromServer.json())
 .then((dataJson) => {

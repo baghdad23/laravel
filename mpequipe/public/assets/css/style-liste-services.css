@@ -12,17 +12,6 @@
     display: flex;
     justify-content: center;
 }
-#liste button {
-    margin: 10px auto;
-    width: 100px;
-    height: 30px;
-    background-color: #546a79;
-    border: none;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    color: #d5b772;
-    font-weight: bolder;
-    display: block;
-}
 .carteService {
     background-color: white;
     margin: 10px;
@@ -48,7 +37,7 @@
     width: 40%;
 }
 .carteImage button {
-    margin: 10px auto;
+    margin: 10px;
     width: 100px;
     height: 30px;
     background-color: #546a79;
@@ -84,5 +73,13 @@
         height: 100vh;
         margin: 0;
         /* ... */
+    }
+}
+@media (min-width: 1024px) {
+    .carteImage {
+        width: 25%;
+    }
+    .carteService {
+        margin: 20px;
     }
 }

@@ -65,8 +65,8 @@
                 <button type="submit">MODIFIER SERVICE</button>
             </form>
         </div>
+        <h4>LISTE SERVICES</h4>
         <div id="espaceMembreListe">
-            <h4>LISTE SERVICES</h4>
             <div class="service">
                 <p>SERVICE 1</p>
                 <div class="boutonService">
@@ -92,7 +92,7 @@
     </section>
 </main>
 <footer>
-    <p>XXX est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
+    <p>Troc Hour est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
     <p>Vous pouvez nous soumettre des idées d’améliorations, suggérer des services manquants ou signaler un abus : contact@labanquedetemps.com</p>
     <a href="<?php echo url("/mentions-legales") ?>">Mentions légales</a>
     <a href="<?php echo url("/conditions-generales") ?>">Conditions Générales d'Utilisation</a>
