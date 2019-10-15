@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/assets/css/style-commun.css">
     <link rel="stylesheet" href="../public/assets/css/style-liste-services.css">
+        <!-- Import Leaflet CSS Style Sheet -->
+<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+<!-- Import Leaflet JS Library -->
+<script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
     <title>TROC HOUR</title>
 </head>
 <body>
@@ -31,7 +35,7 @@
         <section id="listeServices">
             <div id="liste">
                 <h3>LISTE DE SERVICES</h3>
-                <button type="submit">VOIR CARTE</button>
+                <!-- <button type="submit">VOIR CARTE</button> -->
             </div>
             <div class="carteService">
                 <div class="carteImage">
@@ -68,7 +72,6 @@
             </div>
         </section>
         <section id="map">
-            <div id="gps"></div>
             <div id="my_osm_widget_map" class="map"></div>
         </section>
     </div>
