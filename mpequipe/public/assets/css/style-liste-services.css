@@ -58,13 +58,29 @@
     font-weight: bolder;
     display: block;
 }
+#map {
+    width: 100%;
+    height: 400px;
+}
+#my_osm_widget_map { /* use the same name as <div id=""> */
+    width: 100%; /* important! if you need full width display */
+    height: 400px;
+    margin: 0;
+    /* ... */
+}
 @media (min-width: 768px) {
     #container {
         display: flex;
-        width: calc(100%/2);
+    }
+    #listeServices {
+        width: 50%;
+    }
+    #map {
+        width: 50%;
+        height: 100%;
     }
     #my_osm_widget_map { /* use the same name as <div id=""> */
-        width: 50%; /* important! if you need full width display */
+        width: 100%; /* important! if you need full width display */
         height: 100vh;
         margin: 0;
         /* ... */
