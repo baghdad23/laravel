@@ -58,3 +58,15 @@
     font-weight: bolder;
     display: block;
 }
+@media (min-width: 768px) {
+    #container {
+        display: flex;
+        width: calc(100%/2);
+    }
+    #my_osm_widget_map { /* use the same name as <div id=""> */
+        width: 50%; /* important! if you need full width display */
+        height: 100vh;
+        margin: 0;
+        /* ... */
+    }
+}

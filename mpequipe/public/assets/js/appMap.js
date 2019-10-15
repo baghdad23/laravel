@@ -2,14 +2,14 @@ console.log('code JS chargé');
 
 //RECUPERER LES COORDONNES DE LA VILLE
 
-const URLville = `https://nominatim.openstreetmap.org/search?q=${ville}&format=json`;
+/* const URLville = `https://nominatim.openstreetmap.org/search?q=${ville}&format=json`;
 const gps = document.querySelector('#gps');
 fetch(URL)
     .then(response => response.json())
     .then((data) => {
         gps.insertAdjacentHTML('beforeend', `<div id="mescoord" data-lat="${search.lat}" data-lon="${search.lon}"></div>`);
         console.log(gps);
-    });
+    }); */
 
 
 
