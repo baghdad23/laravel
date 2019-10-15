@@ -1,3 +1,33 @@
+#rechercheService form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin: 20px auto;
+    font-weight: bolder;
+    color: #d5b772;
+}
+#rechercheService form label {
+    margin-top: 10px;
+}
+#rechercheService form select {
+    width: 250px;
+    height: 30px;
+    border: none;
+    background-color: #cccccc; 
+    margin: 10px auto 0;
+}
+#rechercheService form button {
+    margin: 10px auto;
+    width: 120px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
 #categories {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +52,6 @@ h3 {
 }
 .categorie div {
     margin: 10px;
-    width: 60%;
 }
 .categorie h4 {
     margin: 0;
@@ -32,8 +61,16 @@ h3 {
     font-size: 12px;
 }
 @media (min-width: 768px) {
-    .categorie {
-        width: 47%;
-        margin: 10px 10px 10px 5px;
+    #categories {
+
     }
+    .categorie {
+        width: 30%;
+        margin: 10px 10px 10px 5px;
+        flex-direction: column;
+    }
+    .categorie p {
+        margin-left: 20px;
+    }
+
 }

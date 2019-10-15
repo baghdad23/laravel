@@ -53,36 +53,7 @@ a {
     color: white;
     font-size: 12px;
 }
-#rechercheService form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 250px;
-    margin: 20px auto;
-    font-weight: bolder;
-    color: #d5b772;
-}
-#rechercheService form label {
-    margin-top: 10px;
-}
-#rechercheService form select {
-    width: 250px;
-    height: 30px;
-    border: none;
-    background-color: #cccccc; 
-    margin: 10px auto 0;
-}
-#rechercheService form button {
-    margin: 10px auto;
-    width: 120px;
-    height: 30px;
-    background-color: #546a79;
-    border: none;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    color: #d5b772;
-    font-weight: bolder;
-    display: block;
-}
+
 
 /*FOOTER*/
 footer {
@@ -122,6 +93,6 @@ footer ul {
         padding: 20px 20px 0 0;
     }
     footer p {
-        max-width: 300px;
+        max-width: 100%;
     }
 }
