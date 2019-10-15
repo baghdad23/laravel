@@ -10,7 +10,7 @@
 </head>
 <body>
 <head>
-    <h1>PROJET MAEKETPLACE</h1>
+    <h1>PROJET </h1>
 
     <h3>Conditions Générales d'Utilisation</h3>
     <nav>
