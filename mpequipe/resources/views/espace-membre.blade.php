@@ -51,6 +51,70 @@
             <h4>CREATE</h4>
             <form method="POST" action="">  
                 <input type="texte" name="service" placeholder="entrez le service" required>
+                <select name="categorie" required>
+                <option value="" selected="selected">Type de service</option>
+                <optgroup label="ADMINISTRATION">
+                    <option>Aide à la rédaction, lettres, CV, corrections</option>
+                    <option>Aide administrative, impôts, question juridiques</option>
+                    <option>Comptabilité du foyer</option>
+                    <option>Traduction de documents</option>
+                </optgroup>
+                <optgroup label="AIDE A LA PERSONNE">
+                    <option>Accompagnement – Aide aux personnes âgées</option>
+                    <option>Aide – Bras pour déménagement</option>
+                    <option>Aide aux personnes à mobilité réduite</option>
+                    <option>Courses à votre place – Aide aux courses</option>
+                    <option>Transport de personnes ou de matériel</option>
+                </optgroup>
+                <optgroup label="ANIMAUX DE COMPAGNIE">
+                    <option>Visite</option>
+                    <option>Garde</option>
+                    <option>Promenade</option>
+                </optgroup>
+                <optgroup label="AUTRES">
+                    <option>Précisez</option>
+                </optgroup>
+                <optgroup label="BRICOLAGE">
+                    <option>Électricité</option>
+                    <option>Maçonnerie</option>
+                    <option>Mécanique (réparation, voiture, vélo, etc)</option>
+                    <option>Montage de meubles, étagères, etc.</option>
+                    <option>Peinture</option>
+                    <option>Plomberie</option>
+                    <option>Réparation petit matériel (précisez)</option>
+                    <option>Restauration</option>
+                </optgroup>
+                <optgroup label="COURS">
+                    <option>Art et artisanat</option>
+                    <option>Musique, danse, chant</option>
+                    <option>Langues</option>
+                </optgroup>
+                <optgroup label="ENFANCE">
+                    <option>Garde d'enfants</option>
+                    <option>Sortie d'école</option>
+                    <option>Aide au devoirs</option>
+                </optgroup>
+                <optgroup label="MAISON">
+                    <option>Aide au rangement</option>
+                    <option>Couture (reprises, broderie, machine, etc)</option>
+                    <option>Cuisine</option>
+                    <option>Jardinage – Arrosage – Conseils (précisez)</option>
+                    <option>Ménage – Repassage – Vitres</option>
+                </optgroup>
+                <optgroup label="NUMÉRIQUE">
+                    <option>Graphisme (précisez)</option>
+                    <option>Informatique (word, excel, logiciels divers)</option>
+                    <option>Petit dépannage informatique (précisez)</option>
+                    <option>Photographie, retouches (précisez)</option>
+                </optgroup>
+                <optgroup label="SANTÉ /BEAUTÉ">
+                    <option>Conseil nutrition – Diététique</option>
+                    <option>Maquillage</option>
+                    <option>Coupe – Soins cheveux – Coiffure</option>
+                    <option>Techniques relaxation</option>
+                    <option>Manucure - Ongles</option>
+                </optgroup>
+            </select>
                 <textarea name="description" placeholder="entrez description du service"></textarea>
                 <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
                 <button type="submit">PUBLIER SERVICE</button>
@@ -60,6 +124,70 @@
             <h4>UPDATE</h4>
             <form method="POST" action="">  
                 <input type="texte" name="service" placeholder="entrez le service" required>
+                <select name="categorie" required>
+                <option value="" selected="selected">Type de service</option>
+                <optgroup label="ADMINISTRATION">
+                    <option>Aide à la rédaction, lettres, CV, corrections</option>
+                    <option>Aide administrative, impôts, question juridiques</option>
+                    <option>Comptabilité du foyer</option>
+                    <option>Traduction de documents</option>
+                </optgroup>
+                <optgroup label="AIDE A LA PERSONNE">
+                    <option>Accompagnement – Aide aux personnes âgées</option>
+                    <option>Aide – Bras pour déménagement</option>
+                    <option>Aide aux personnes à mobilité réduite</option>
+                    <option>Courses à votre place – Aide aux courses</option>
+                    <option>Transport de personnes ou de matériel</option>
+                </optgroup>
+                <optgroup label="ANIMAUX DE COMPAGNIE">
+                    <option>Visite</option>
+                    <option>Garde</option>
+                    <option>Promenade</option>
+                </optgroup>
+                <optgroup label="AUTRES">
+                    <option>Précisez</option>
+                </optgroup>
+                <optgroup label="BRICOLAGE">
+                    <option>Électricité</option>
+                    <option>Maçonnerie</option>
+                    <option>Mécanique (réparation, voiture, vélo, etc)</option>
+                    <option>Montage de meubles, étagères, etc.</option>
+                    <option>Peinture</option>
+                    <option>Plomberie</option>
+                    <option>Réparation petit matériel (précisez)</option>
+                    <option>Restauration</option>
+                </optgroup>
+                <optgroup label="COURS">
+                    <option>Art et artisanat</option>
+                    <option>Musique, danse, chant</option>
+                    <option>Langues</option>
+                </optgroup>
+                <optgroup label="ENFANCE">
+                    <option>Garde d'enfants</option>
+                    <option>Sortie d'école</option>
+                    <option>Aide au devoirs</option>
+                </optgroup>
+                <optgroup label="MAISON">
+                    <option>Aide au rangement</option>
+                    <option>Couture (reprises, broderie, machine, etc)</option>
+                    <option>Cuisine</option>
+                    <option>Jardinage – Arrosage – Conseils (précisez)</option>
+                    <option>Ménage – Repassage – Vitres</option>
+                </optgroup>
+                <optgroup label="NUMÉRIQUE">
+                    <option>Graphisme (précisez)</option>
+                    <option>Informatique (word, excel, logiciels divers)</option>
+                    <option>Petit dépannage informatique (précisez)</option>
+                    <option>Photographie, retouches (précisez)</option>
+                </optgroup>
+                <optgroup label="SANTÉ /BEAUTÉ">
+                    <option>Conseil nutrition – Diététique</option>
+                    <option>Maquillage</option>
+                    <option>Coupe – Soins cheveux – Coiffure</option>
+                    <option>Techniques relaxation</option>
+                    <option>Manucure - Ongles</option>
+                </optgroup>
+            </select>
                 <textarea name="description" placeholder="entrez description du service"></textarea>
                 <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
                 <button type="submit">MODIFIER SERVICE</button>
