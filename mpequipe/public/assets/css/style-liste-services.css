@@ -1,0 +1,85 @@
+#listeServices {
+    background-color: #d5b772;
+    padding-bottom: 10px;
+}
+#listeServices h3 {
+    margin: 0;
+    color: #546a79;
+    padding: 10px;
+
+}
+#liste {
+    display: flex;
+    justify-content: center;
+}
+.carteService {
+    background-color: white;
+    margin: 10px;
+    display: flex;
+}
+.carteService img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.carteTexte {
+    width: 60%;
+    padding: 10px;
+}
+.carteService h4 {
+    color: #546a79;
+}
+.carteService p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.carteImage {
+    width: 40%;
+}
+.carteImage button {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
+#map {
+    width: 100%;
+    height: 400px;
+}
+#my_osm_widget_map { /* use the same name as <div id=""> */
+    width: 100%; /* important! if you need full width display */
+    height: 400px;
+    margin: 0;
+    /* ... */
+}
+@media (min-width: 768px) {
+    #container {
+        display: flex;
+    }
+    #listeServices {
+        width: 50%;
+    }
+    #map {
+        width: 50%;
+        height: 100%;
+    }
+    #my_osm_widget_map { /* use the same name as <div id=""> */
+        width: 100%; /* important! if you need full width display */
+        height: 100vh;
+        margin: 0;
+        /* ... */
+    }
+}
+@media (min-width: 1024px) {
+    .carteImage {
+        width: 25%;
+    }
+    .carteService {
+        margin: 20px;
+    }
+}

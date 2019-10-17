@@ -1,0 +1,109 @@
+#espaceMembre img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+}
+#espaceMembre button {
+    width: 100px;
+    height: 40px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
+#espaceMembre h4 {
+    color: #546a79;
+    margin: 20px;
+}
+#espaceMembreBouton {
+    display: flex;
+    justify-content: center;
+}
+#espaceMembreBouton button {
+    margin: 10px 10px;
+}
+.espaceMembreForm {
+    margin: 20px;
+}
+.espaceMembreForm form {
+    display: flex;
+    flex-direction: column;
+}
+.espaceMembreForm form button {
+    margin: auto;
+}
+.espaceMembreForm form input {
+    width: 98%;
+    height: 30px;
+    background-color: #cccccc;
+    border: none;
+    margin: 5px 0;
+    padding-left: 5px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.espaceMembreForm form textarea {
+    width: 98%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    border: none;
+    padding: 0 0 0 5px;
+    height: 100px;
+}
+.espaceMembreForm form input[type="file"] {
+    background-color: white;
+    padding: 0;
+}
+#espaceMembreListe {
+    margin: 20px;
+}
+#espaceMembreListe ul li {
+    list-style: none;
+    font-weight: bolder;
+}
+.espaceMembreForm form select {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: #cccccc; 
+    margin: 10px auto;
+}
+.service {
+    background-color: #d5b772;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.service p {
+    font-weight: bolder;
+    padding: 10px 0 0 10px;
+    margin: 0;
+}
+.boutonService {
+    display: flex;
+    justify-content: space-between;
+}
+.boutonService button {
+    margin: 10px;
+}
+@media (min-width: 768px) {
+    .espaceMembreForm {
+        margin: 20px auto;
+        width: 50%;
+    }
+    #espaceMembreListe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service {
+        width: 30%;
+        margin: 10px 5px;
+    }
+}
+@media (min-width: 768px) {
+    .espaceMembreForm {
+        width: 40%;
+    }
+}

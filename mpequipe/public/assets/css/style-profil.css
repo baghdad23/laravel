@@ -1,0 +1,49 @@
+#profil {
+    min-width: 280px;
+    margin: auto;
+}
+#profilImage img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding-top: 20px;
+    display: block;
+}
+#profilTexte {
+    padding: 20px 35px;
+}
+#profilTexte h4 {
+    color: #546a79;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+#profilTexte p {
+    font-size: 14px;
+}
+#profilBouton {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+#profilBouton button {
+    width: 100px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+}
+@media (min-width: 768px) {
+    #profil {
+        width: 400px;
+        margin: auto;
+        background-color: white;
+    }
+    main {
+        background-color: #d5b772;
+        margin: 0;
+    }
+}
