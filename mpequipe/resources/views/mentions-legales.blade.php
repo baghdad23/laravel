@@ -33,7 +33,7 @@
      il est précisé aux utilisateurs du site 
      trochour.com l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
      <h3>Propriétaires/Responsable publication : Maisons de quartier de Marseille
-     ebmaster  : </h3>
+     ebmaster : </h3>
      <p>Florence GOMIS <br>
      Rebeca GRUBER <br>
      Aissia BAGDAD <br>
