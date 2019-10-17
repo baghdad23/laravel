@@ -102,8 +102,3 @@
         margin: 10px 5px;
     }
 }
-@media (min-width: 768px) {
-    .espaceMembreForm {
-        width: 40%;
-    }
-}

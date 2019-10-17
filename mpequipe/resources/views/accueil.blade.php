@@ -30,14 +30,14 @@
     <!--<h3>SECTION ACCUEIL</h3>-->
     <section id="rechercheService">
         <form method="GET" action="">
-            <label>
+<!--             <label>
                 <input type="radio" name="service" value="besoinService">
                 J'ai besoin d'un service
             </label>
             <label>
                 <input type="radio" name="service" value="rendreService">
                 Je veux rendre un service
-            </label>
+            </label> -->
             <select name="categorie" required>
                 <option value="" selected="selected">Type de service</option>
                 <optgroup label="ADMINISTRATION">
