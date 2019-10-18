@@ -28,3 +28,5 @@ Route::view('/profil', 'profil');
 Route::view('/conditions-generales', 'conditions-generales');
 Route::view('/mentions-legales', 'mentions-legales');
 Route::view('/espace-admin', 'espace-admin');
+
+Route::any('/contact/store', 'ContactController@store');
