@@ -26,7 +26,7 @@
         </nav>
     </div>
 </header>
-    <h1>PROJET MARKETPLACE</h1>
+    <h1>COMMENT CA MARCHE ?</h1>
     <a href="#"><img src="" id="logo"></a>
     <nav>
         <ul>
