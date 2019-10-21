@@ -1,0 +1,26 @@
+
+body{
+    background-color:#cac6c6;
+}
+#conteneur, #conteneur1{
+    width: 960px;
+    -webkit-columns: 3 auto;
+    -moz-columns: 3 auto;
+    columns: 3 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-gap: 40px;
+
+ }
+#conteneur p, #conteneur p{
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+p{
+    text-align: center;
+}
+#sophie{
+    margin-top: 80px;
+    justify-content: center;
+}
+
