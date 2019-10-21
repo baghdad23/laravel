@@ -103,6 +103,7 @@
                 </optgroup>
             </select>
             <button type="submit">CHERCHER</button>
+            @csrf
         </form>
     </section>
         <section id="categories">

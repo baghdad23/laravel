@@ -28,10 +28,10 @@
     </header>
     <main>
         <h3>FORMULAIRE DE CONTACT</h3>
-        <form method="" action="">
-            <input type="text" placeholder="entrez votre nom" name="nom" required id="contact-nom">
-            <input type="email" placeholder="entrez votre email" name="email" required id="contact-email">
-            <textarea name="contact-message" id="contact-message" placeholder="entrez votre message" cols="80" rows="6" required></textarea>
+        <form method="POST" action="contact/store">
+            <input type="text" placeholder="entrez votre nom" name="nom" required>
+            <input type="email" placeholder="entrez votre email" name="email" required>
+            <textarea name="message" placeholder="entrez votre message" required></textarea>
             <button type="submit">ENVOYER</button>
             @csrf
         </form>

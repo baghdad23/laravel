@@ -45,12 +45,12 @@
                 <input type="password" name="pasword" placeholder="entrez votre mot de passe" required>
                 <input type="file" name="photo">
                 <button type="submit">CHANGER DONNÉES</button>
+                @csrf
             </form>
         </div>
         <div class="espaceMembreForm">
             <h4>CREATE</h4>
             <form method="POST" action="">  
-                <input type="texte" name="service" placeholder="entrez le service" required>
                 <select name="categorie" required>
                 <option value="" selected="selected">Type de service</option>
                 <optgroup label="ADMINISTRATION">
@@ -118,12 +118,12 @@
                 <textarea name="description" placeholder="entrez description du service"></textarea>
                 <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
                 <button type="submit">PUBLIER SERVICE</button>
+                @csrf
             </form>
         </div>
         <div class="espaceMembreForm">
             <h4>UPDATE</h4>
             <form method="POST" action="">  
-                <input type="texte" name="service" placeholder="entrez le service" required>
                 <select name="categorie" required>
                 <option value="" selected="selected">Type de service</option>
                 <optgroup label="ADMINISTRATION">
@@ -191,6 +191,7 @@
                 <textarea name="description" placeholder="entrez description du service"></textarea>
                 <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
                 <button type="submit">MODIFIER SERVICE</button>
+                @csrf
             </form>
         </div>
         <h4>LISTE SERVICES</h4>
