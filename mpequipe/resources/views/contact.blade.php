@@ -13,10 +13,10 @@
         <!--<h1>PROJET MARKETPLACE</h1>-->
         <a href="#"  id="logo"><img src="../public/assets/images/logo.png"></a>
         <div>
-            <div id="boutonsConnexion">
-                <button type="submit" id="inscription">S'INSCRIRE</button>
-                <button type="submit" id="connexion">SE CONNECTER</button>
-            </div>
+        <div id="boutonsConnexion">
+            <a href="<?php echo url("/inscription") ?>">S'INSCRIRE</a>
+            <a href="<?php echo url("/connexion") ?>">SE CONNECTER</a>
+        </div>
             <nav>
                 <ul id="menu">
                     <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
