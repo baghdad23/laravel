@@ -3,93 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/assets/css/style-commun.css">
+    <link rel="stylesheet" href="../public/assets/css/style-inscription.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>Formulaire d'inscription</title>
-<style>
-body{
-    -webkit-background-size: cover;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #D5B772;
-}
-
-/* Le bouton de validation*/
-.Inscription{
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 30px;
-    width: 15%;
-}
-
-input[type=submit]{
-    font-size:16px;
-    color: #fff;
-    background-color: #546A79;
-    border-radius: 5px;
-    }
-
-
-/* La disposition des boutons hommes & femmes*/
-.milieu {
-    padding:10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* La disposition, la longueur, largeur des boutons à remplir*/
-#nom, #prenom, #pseudo, #phone, #codepostal, #adress, #mdp{
-    margin: 10px;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 30px;
-    width: 25%;
-
-}
-
-/* La taille du H3*/
-h3 {font-size: 46px;
-    text-align: center;
-}
-
-</style>
     
 </head>
 
 <body>
+<header>
+    <!--<h1>PROJET MARKETPLACE</h1>-->
+    <a href="#"  id="logo"><img src="../public/assets/images/logo.png"></a>
+    <div>
+        <div id="boutonsConnexion">
+            <button type="submit" id="inscription">S'INSCRIRE</button>
+            <button type="submit" id="connexion">SE CONNECTER</button>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
+                <li><a href="<?php echo url("/infos") ?>">COMMENT ÇA MARCHE?</a></li>
+                <li><a href="<?php echo url("/contact") ?>">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <h3>Inscription</h3>
 
     <form action method="post" action="">
 
-
-
-<div class="milieu">
-    <label for="homme">Homme</label><input type="radio" name="sexe" id="homme" value="homme" id="homme"/>
-    <label for="femme">Femme</label><input type="radio" name="sexe"id="femme" value="femme" id="femme"/>
-</div>
-
     <input type="text" name="nom" id="nom" required placeholder="Nom"/>
-    <input type="text" name="prenom" id="prenom" required placeholder="Prenom"/>
     <input type="text" name="pseudo" id="pseudo" required placeholder="Pseudo"/>
     <input type="tel"  name="phone" id="phone" required placeholder="Télephone"/>
     <input type="text"  name="adress" id="adress" required placeholder="Adress"/>
-    <input type="text"  name="codepostal" id="codepostal" required placeholder="Code postal"/>
     <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"/>
 
-  <input type="submit" value="inscription" class="Inscription"/>
+  <button type="submit">S'INSCRIRE</button>
   @csrf
 
-
-
     </form>
+    <footer>
+    <p>Troc Hour est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
+    <p>Vous pouvez nous soumettre des idées d’améliorations, suggérer des services manquants ou signaler un abus : contact@troc-hour.com</p>
+    <a href="<?php echo url("/mentions-legales") ?>">Mentions légales</a>
+    <a href="<?php echo url("/conditions-generales") ?>">Conditions Générales d'Utilisation</a>
+    <ul>
+        <li><a href="<?php echo url("/espace-membre") ?>">membre</a></li>
+        <li><a href="<?php echo url("/espace-admin") ?>">admin</a></li>
+    </ul>
+</footer>
 
 </body>
 </html>

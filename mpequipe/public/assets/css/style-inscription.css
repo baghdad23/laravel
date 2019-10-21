@@ -1,0 +1,59 @@
+
+body{
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background-color: #D5B772;
+}
+h3 {
+    color: #546a79;
+    margin: 20px;
+    display: inline;
+    width: 100%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+/* Le bouton de validation*/
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+    margin: 10px auto;
+}
+
+input {
+    width: 98%;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    margin: 5px 0;
+    padding-left: 5px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+
+/* La taille du H3*/
+h3 {font-size: 46px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    Form {
+        margin: 20px auto;
+        width: 50%;
+    }
+}
