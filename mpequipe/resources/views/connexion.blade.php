@@ -29,7 +29,7 @@
     </div>
     </div> -->
                     <div>
-                        <button type="submit">
+                        <button type="submit"><img src="../public/assets/images/X.png"></button>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
