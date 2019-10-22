@@ -14,16 +14,31 @@
     font-weight: bolder;
     display: block;
 }
+#espaceMembreBouton a {
+    width: 100px;
+    height: 35px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin: 8px;
+    padding-top: 6px;
+}
 #espaceMembre h4 {
     color: #546a79;
     margin: 20px;
 }
 #espaceMembreBouton {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 #espaceMembreBouton button {
-    margin: 10px 10px;
+    margin: 8px;
 }
 .espaceMembreForm {
     margin: 20px;
@@ -33,7 +48,7 @@
     flex-direction: column;
 }
 .espaceMembreForm form button {
-    margin: auto;
+    margin: 10px auto;
 }
 .espaceMembreForm form input {
     width: 98%;
@@ -85,7 +100,7 @@
     justify-content: space-between;
 }
 .boutonService button {
-    margin: 10px;
+    margin: 5px;
 }
 @media (min-width: 768px) {
     .espaceMembreForm {
