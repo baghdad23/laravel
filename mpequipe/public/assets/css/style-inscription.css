@@ -44,6 +44,6 @@ label {
 @media (min-width: 768px) {
     Form {
         margin: 20px auto;
-        width: 50%;
+        width: 40%;
     }
 }

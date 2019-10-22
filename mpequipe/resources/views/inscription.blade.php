@@ -126,6 +126,15 @@
         </div>
     </div>
 </div>
+<footer>
+    <p>Troc Hour est une initiative de la Maison du quartier. Elle est soutenue par la ville de Marseille.</p>
+    <p>Vous pouvez nous soumettre des idées d’améliorations, suggérer des services manquants ou signaler un abus : contact@troc-hour.com</p>
+    <a href="<?php echo url("/mentions-legales") ?>">Mentions légales</a>
+    <a href="<?php echo url("/conditions-generales") ?>">Conditions Générales d'Utilisation</a>
+    <ul>
+        <li><a href="<?php echo url("/espace-membre") ?>">membre</a></li>
+        <li><a href="<?php echo url("/espace-admin") ?>">admin</a></li>
+    </ul>
 </footer>
 
 </body>

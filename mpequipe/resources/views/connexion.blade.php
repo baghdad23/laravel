@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<h3>CONNEXION</h3>
+
     
    
 <main>
@@ -28,8 +28,10 @@
 </form>
     </div>
     </div> -->
-                    <div>
-                        <button type="submit"><img src="../public/assets/images/X.png"></button>
+
+                <div class="container">
+                    <a href="" id="fermer"><img src="../public/assets/images/X.png"></a>
+                    <h3>CONNEXION</h3>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -87,6 +89,7 @@
                             </div>
                         </div>
                     </form>
+                </div>
 </main>
 
 </body>
