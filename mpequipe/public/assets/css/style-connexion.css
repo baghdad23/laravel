@@ -15,9 +15,10 @@ body{
 h3 {
     color: #546a79;
     padding: 20px 0;
-    width: 100%;
+    width: 50%;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: auto;
 }
 #fermer {
     margin: 10px 20px;
