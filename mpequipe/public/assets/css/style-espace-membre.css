@@ -99,7 +99,15 @@
     display: flex;
     justify-content: space-between;
 }
-.boutonService button {
+#espaceMembreListe button {
+    width: 120px;
+    height: 30px;
+    background-color: #546a79;
+    border: none;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #d5b772;
+    font-weight: bolder;
+    display: block;
     margin: 5px;
 }
 @media (min-width: 768px) {
