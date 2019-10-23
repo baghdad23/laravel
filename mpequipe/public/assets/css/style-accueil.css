@@ -35,9 +35,9 @@
 }
 h3 {
     color: #546a79;
-    margin: 20px;
-    display: inline;
+    margin: 20px 0;
     width: 100%;
+    text-align: center;
 }
 .categorie {
     background-color: #d5b772;

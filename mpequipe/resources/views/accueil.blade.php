@@ -11,7 +11,7 @@
 <body>
 <header>
     <!--<h1>PROJET MARKETPLACE</h1>-->
-    <a href="#"  id="logo"><img src="../public/assets/images/logo.png"></a>
+    <a href="<?php echo url("/") ?>"  id="logo"><img src="../public/assets/images/logo.png"></a>
     <div>
         <div id="boutonsConnexion">
             <a href="<?php echo url("/inscription") ?>">S'INSCRIRE</a>
@@ -29,6 +29,7 @@
 <main>
     <!--<h3>SECTION ACCUEIL</h3>-->
     <section id="rechercheService">
+        <h3>Je cherche un service</h3>
         <form method="GET" action="">
 <!--             <label>
                 <input type="radio" name="service" value="besoinService">

@@ -15,7 +15,7 @@
 <body>
 <header>
     <!--<h1>PROJET MARKETPLACE</h1>-->
-    <a href="#"  id="logo"><img src="../public/assets/images/logo.png"></a>
+    <a href="<?php echo url("/") ?>"  id="logo"><img src="../public/assets/images/logo.png"></a>
     <div>
         <div id="boutonsConnexion">
             <a href="<?php echo url("/inscription") ?>">S'INSCRIRE</a>
