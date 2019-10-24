@@ -50,7 +50,7 @@
                 </div>
                 <div class="espaceMembreForm">
                     <h4>MODIFIER DONNÉES</h4>
-                    <form method="POST" action="">  
+                    <form method="POST" action="" enctype="multipart/form-data">  
                         <input type="texte" name="name" placeholder="entrez votre nom" required>
                         <input type="email" name="email" placeholder="entrez votre email" required>
                         <input type="password" name="pasword" placeholder="entrez votre mot de passe" required>
@@ -133,15 +133,17 @@
                         <input type="texte" name="perimetre" placeholder="entrez le code postal" required>
                         <button type="submit">PUBLIER SERVICE</button>
                         <div class="confirmation">
-                            @{{confirmation}}
+                            @{{ confirmation }}
                         </div>
                         @csrf
                     </form>
                 </div>
-                <div class="espaceMembreForm">
+
+        <!-- MODIFIER UN SERVICE -->
+                <div v-if="serviceUpdate" class="espaceMembreForm">
                     <h4>UPDATE</h4>
-                    <form method="POST" action="">  
-                        <select name="categorie" required>
+                    <form @submit.prevent="envoyerFormAjax" method="POST" action="service/modifier">  
+                        <select name="categorie" v-model="serviceUpdate.categorie" required>
                         <option value="" selected="selected">Type de service</option>
                         <optgroup label="ADMINISTRATION">
                             <option>Aide à la rédaction, lettres, CV, corrections</option>
@@ -205,33 +207,25 @@
                             <option>Manucure - Ongles</option>
                         </optgroup>
                     </select>
-                        <textarea name="description" placeholder="entrez description du service"></textarea>
-                        <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
+                        <textarea name="description" v-model="serviceUpdate.description" placeholder="entrez description du service"></textarea>
+                        <input type="texte" name="disponible" v-model="serviceUpdate.disponible" placeholder="entrez la disponibilité" required>
+                        <input type="texte" name="perimetre" v-model="serviceUpdate.perimetre" placeholder="entrez le code postal" required>
                         <button type="submit">MODIFIER SERVICE</button>
+                        <input type="hidden" name="id"  v-model="serviceUpdate.id">
+                        <div class="confirmation">
+                             @{{ confirmation }}
+                        </div>
                         @csrf
                     </form>
                 </div>
-                <h4>LISTE SERVICES</h4>
+                <h4>LISTE SERVICES @{{ services.length }}</h4>
                 <div id="espaceMembreListe">
-                    <div class="service">
-                        <p>SERVICE 1</p>
+                    <div class="service" v-for="service in services">
+                        <h3>@{{ service.categorie }}</h3>
+                        <p>@{{ service.description }}</p>
                         <div class="boutonService">
-                            <button type="submit">MODIFIER</button>
-                            <button type="submit">SUPRIMMER</button>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <p>SERVICE 2</p>
-                        <div class="boutonService">
-                            <button type="submit">MODIFIER</button>
-                            <button type="submit">SUPRIMMER</button>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <p>SERVICE 3</p>
-                        <div class="boutonService">
-                            <button type="submit">MODIFIER</button>
-                            <button type="submit">SUPRIMMER</button>
+                            <button type="submit" @click.prevent="modifierService(service)">MODIFIER</button>
+                            <button type="submit" @click.prevent="supprimerService(service)">SUPRIMMER</button>
                         </div>
                     </div>
                 </div>
@@ -252,7 +246,45 @@
     <script>
         var app = new Vue({
             el: '#app',
+            mounted: function () {
+                // SIMULE UNE FAUSSE SUPPRESSION
+                // BRICOLAGE POUR OBTENIR L'AFFICHAGE
+                this.supprimerService({ id: -1});
+            },
             methods: {
+                modifierService: function(service) {
+                    // debug
+                    console.log(service);
+                    // JE MEMORISE L'ANNONCE A MODIFIER DANS UNE VARIABLE VUEJS
+                    this.serviceUpdate = service;
+                },
+                supprimerService: function(service) {
+                    console.log(service);
+                    var formData = new FormData();
+                    formData.append('id', service.id);
+                    formData.append('_token', '{{ csrf_token() }}');
+
+                    fetch('service/supprimer', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(responseObjetJSON) {
+                        if (responseObjetJSON.confirmation)
+                        {
+                // ON VA STOCKER LA CONFORMATION DANS UNE VARIABLE VUEJS
+                            app.confirmation = responseObjetJSON.confirmation;
+                        }
+                        if (responseObjetJSON.services)
+                        {
+                // ON VA STOCKER LA CONFORMATION DANS UNE VARIABLE VUEJS
+                console.log(responseObjetJSON.services);
+                            app.services = responseObjetJSON.services;
+                        }
+                    });
+                },
                 envoyerFormAjax: function (event){
                     console.log(event.target);
                     var formData = new FormData(event.target);
@@ -264,18 +296,23 @@
                     .then(function(response) {
                         return response.json();
                     })
-                    .then(function(responseObjetJson) {
-                        if(responseObjetJson.confrimation){
-                            app.confrimation = responseObjetJson;
+                    .then(function(responseObjetJSON) {
+                        if(responseObjetJSON.confirmation){
+                            app.confirmation = responseObjetJSON.confirmation;
+                        }
+                        if(responseObjetJSON.services) {
+                            app.services = responseObjetJSON.services;
                         }
                     });
                 }
             },
             data: {
-                confirmation: 'message confirmation',
+                serviceUpdate: null,  
+                services: [],
+                confirmation: '',
                 message: 'Hello Vue!'
-        }
-})
+            }
+        });
     </script>     
 </body>
 </html>

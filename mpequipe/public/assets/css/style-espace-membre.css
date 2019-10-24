@@ -73,27 +73,28 @@
 }
 #espaceMembreListe {
     margin: 20px;
-}
-#espaceMembreListe ul li {
-    list-style: none;
-    font-weight: bolder;
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
 }
 .espaceMembreForm form select {
-    width: 100%;
+    width: 99%;
     height: 30px;
     border: none;
     background-color: #cccccc; 
-    margin: 10px auto;
+    margin: 10px 0;
 }
 .service {
     background-color: #d5b772;
-    width: 100%;
-    margin-bottom: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.service h3 {
+    color: #546a79;
+    margin: 10px;
 }
 .service p {
-    font-weight: bolder;
-    padding: 10px 0 0 10px;
-    margin: 0;
+    margin: 10px;
 }
 .boutonService {
     display: flex;

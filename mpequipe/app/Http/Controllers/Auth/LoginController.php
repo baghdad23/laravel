@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -27,6 +28,25 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/espace-membre';
 
+
+    public function redirectTo ()
+    {
+        // https://laravel.com/docs/5.8/authentication#retrieving-the-authenticated-user
+        $utilisateurConnecte = Auth::user();
+        // CONNECTE COMME MEMBRE (level == 1)
+        if ($utilisateurConnecte != null 
+                && $utilisateurConnecte->level == 1)
+        {
+            return '/espace-membre';
+        }
+        // CONNECTE COMME ADMIN (level == 2)
+        if ($utilisateurConnecte != null 
+                && $utilisateurConnecte->level == 2)
+        {
+            return '/espace-admin';
+        }
+        
+    }
     /**
      * Create a new controller instance.
      *

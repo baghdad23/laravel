@@ -40,3 +40,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::any('/service/store', 'ServiceController@store');
+
+// DELETE
+Route::any('/service/supprimer', 'ServiceController@supprimer');
+// UPDATE
+Route::any('/service/modifier', 'ServiceController@modifier');
+
+Route::view('/services', 'services');
