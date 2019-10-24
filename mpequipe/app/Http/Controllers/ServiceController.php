@@ -96,6 +96,7 @@ class ServiceController extends Controller
             {
                 // CAS OU IL Y A DES ERREURS
                 $tabAssoJson["erreur"] = "IL Y A DES ERREURS";
+                $tabAssoJson["confirmation"] = "IL Y A DES ERREURS";
             }
             else
             {
@@ -113,6 +114,7 @@ class ServiceController extends Controller
                 $tabInput["user_id"] = $utilisateurConnecte->id;
 
                 Service::create($tabInput);
+                $tabAssoJson['confirmation'] = 'votre service est publié';
             }
 
         }
@@ -121,6 +123,7 @@ class ServiceController extends Controller
             // ERREUR
             // IL FAUT ETRE CONNECTE POUR PUBLIER UNE ANNONCE
             $tabAssoJson["erreur"] = "IL FAUT ETRE CONNECTE POUR PUBLIER UNE ANNONCE";
+            $tabAssoJson['confirmation'] = 'IL FAUT ETRE CONNECTE POUR PUBLIER UNE ANNONCE';
         }
         return $tabAssoJson;
     }

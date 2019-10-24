@@ -60,10 +60,10 @@
                     </form>
                 </div>
 
-                <!-- PUBLIER UN SERVICE -->
+        <!-- PUBLIER UN SERVICE -->
                 <div class="espaceMembreForm">
                     <h4>CREATE</h4>
-                    <form method="POST" action="service/store">  
+                    <form @submit.prevent="envoyerFormAjax" method="POST" action="service/store">  
                         <select name="categorie" required>
                         <option value="" selected="selected">Type de service</option>
                         <optgroup label="ADMINISTRATION">
@@ -132,6 +132,9 @@
                         <input type="texte" name="disponible" placeholder="entrez la disponibilité" required>
                         <input type="texte" name="perimetre" placeholder="entrez le code postal" required>
                         <button type="submit">PUBLIER SERVICE</button>
+                        <div class="confirmation">
+                            @{{confirmation}}
+                        </div>
                         @csrf
                     </form>
                 </div>
@@ -249,8 +252,28 @@
     <script>
         var app = new Vue({
             el: '#app',
+            methods: {
+                envoyerFormAjax: function (event){
+                    console.log(event.target);
+                    var formData = new FormData(event.target);
+                    var urlAction = event.target.getAttribute('action');
+                    fetch(urlAction, {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(responseObjetJson) {
+                        if(responseObjetJson.confrimation){
+                            app.confrimation = responseObjetJson;
+                        }
+                    });
+                }
+            },
             data: {
-            message: 'Hello Vue!'
+                confirmation: 'message confirmation',
+                message: 'Hello Vue!'
         }
 })
     </script>     
