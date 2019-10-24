@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/assets/css/style-commun.css">
     <link rel="stylesheet" href="../public/assets/css/style-espace-membre.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>TROC HOUR</title>
 </head>
 <body>
@@ -23,6 +22,7 @@
                     <ul id="menu">
                         <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
                         <li><a href="<?php echo url("/infos") ?>">COMMENT ÇA MARCHE?</a></li>
+                        <li><a href="<?php echo url('/espace-membre') ?>">ESPACE MEMBRE</a></li>
                         <li><a href="<?php echo url("/contact") ?>">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -51,18 +51,19 @@
                 <div class="espaceMembreForm">
                     <h4>MODIFIER DONNÉES</h4>
                     <form method="POST" action="">  
-                        <input type="texte" name="nom" placeholder="entrez votre nom" required>
-                        <input type="date" name="dateInscription">
-                        <input type="texte" name="pseudo" placeholder="entrez votre pseudo" required>
+                        <input type="texte" name="name" placeholder="entrez votre nom" required>
+                        <input type="email" name="email" placeholder="entrez votre email" required>
                         <input type="password" name="pasword" placeholder="entrez votre mot de passe" required>
                         <input type="file" name="photo">
                         <button type="submit">CHANGER DONNÉES</button>
                         @csrf
                     </form>
                 </div>
+
+                <!-- PUBLIER UN SERVICE -->
                 <div class="espaceMembreForm">
                     <h4>CREATE</h4>
-                    <form method="POST" action="">  
+                    <form method="POST" action="service/store">  
                         <select name="categorie" required>
                         <option value="" selected="selected">Type de service</option>
                         <optgroup label="ADMINISTRATION">
@@ -128,7 +129,8 @@
                         </optgroup>
                     </select>
                         <textarea name="description" placeholder="entrez description du service"></textarea>
-                        <input type="texte" name="disponibilite" placeholder="entrez la disponibilité" required>
+                        <input type="texte" name="disponible" placeholder="entrez la disponibilité" required>
+                        <input type="texte" name="perimetre" placeholder="entrez le code postal" required>
                         <button type="submit">PUBLIER SERVICE</button>
                         @csrf
                     </form>
@@ -243,6 +245,7 @@
             </ul>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         var app = new Vue({
             el: '#app',

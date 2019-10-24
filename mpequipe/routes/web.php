@@ -29,8 +29,14 @@ Route::view('/conditions-generales', 'conditions-generales');
 Route::view('/mentions-legales', 'mentions-legales');
 Route::view('/espace-admin', 'espace-admin');
 
+Route::any('/espace-membre', 'ServiceController@afficherEspaceMembre');
+// JE VAIS ME CREER MON LOGOUT
+Route::any('/deconnexion', 'ServiceController@deconnexion');
+
 Route::any('/contact/store', 'ContactController@store');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::any('/service/store', 'ServiceController@store');

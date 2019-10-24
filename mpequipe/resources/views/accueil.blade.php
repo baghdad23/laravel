@@ -21,6 +21,7 @@
             <ul id="menu">
                 <li><a href="<?php echo url("/") ?>">ACCUEIL</a></li>
                 <li><a href="<?php echo url("/infos") ?>">COMMENT ÇA MARCHE?</a></li>
+                <li><a href="<?php echo url('/espace-membre') ?>">ESPACE MEMBRE</a></li>
                 <li><a href="<?php echo url("/contact") ?>">CONTACT</a></li>
             </ul>
         </nav>
