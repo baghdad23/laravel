@@ -47,7 +47,7 @@ img{
         width: 50%;
         margin: auto;
     }
-    p #sophie2contenu .contenu{
+    #conteneur .personnage #sophie2contenu{
         padding-top: 0;
     }
 } 
