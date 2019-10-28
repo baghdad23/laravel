@@ -32,15 +32,15 @@
     <div id="conteneur">
         <div class="personnage"> 
             <img id="sophie" src="../public/assets/images/sophie.png">            
-            <p class="contenu"id="sophiecontenu">Sophie, 30 ans, Atsem dans l’école maternelle du quartier. Elle s’inscrit gratuitement à troc'hour. Elle communique les types de services qu‘elle offre aux autres et ceux dont elle a besoin.</p>
+            <p class="contenu" id="sophiecontenu">Sophie, 30 ans, Atsem dans l’école maternelle du quartier. Elle s’inscrit gratuitement à troc'hour. Elle communique les types de services qu‘elle offre aux autres et ceux dont elle a besoin.</p>
         </div>
         <div class="personnage"> 
             <img id="sophie2" src="../public/assets/images/sophie2.png">
-            <p class="contenu">Elle reçoit 3 crédits (3 heures). Chaque crédit équivaut à une heure de service échangé. Elle consulte les services proposés... </p>
+            <p class="contenu" id="sophie2contenu">Elle reçoit 3 crédits (3 heures). Chaque crédit équivaut à une heure de service échangé. Elle consulte les services proposés... </p>
         </div>
         <div class="personnage"> 
             <img id="sophiePaul" src="../public/assets/images/sophiePaul.png">
-            <p class="contenu"  id="sophiePaulcontenu">et elle contacte Paul pour qu’il l’aide à jardiner. Elle dépense un crédit pour 1h de service.</p>
+            <p class="contenu" id="sophiePaulcontenu">et elle contacte Paul pour qu’il l’aide à jardiner. Elle dépense un crédit pour 1h de service.</p>
         </div>
         <div class="personnage"> 
             <img src="../public/assets/images/paulHayat.png">

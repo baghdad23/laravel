@@ -10,21 +10,60 @@ h3{
 #conteneur{
     display: flex;
     flex-wrap: wrap;
-}
+ }
 .personnage{
-    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10px auto;
+    margin: auto;
 }
-
 .contenu {
     text-align: center;
-    margin: 10px auto;
-    display: flex;
-    flex-wrap: wrap;
+    margin:  auto;
+    padding: 20px;
+    width: 80%;
+}   
+img{
+    width: 90%;
+    margin: auto;
 }
+@media (min-width: 375px)
+{
+    #conteneur .personnage img{
+        width:  90%;
+        margin: 10px auto;
+    }
+} 
+@media (min-width: 425px)
+{
+    #conteneur .personnage img{
+        width:  90%;
+        margin: 10px auto;
+    }
+} 
+    @media (min-width: 768px)
+{
+    .personnage{
+        width: 50%;
+        margin: auto;
+    }
+    p #sophie2contenu .contenu{
+        padding-top: 0;
+    }
+} 
+@media (min-width: 1024px)
+{
+    .personnage{
+        width: 30%;
+    }
+    .personnage img #sophiePaul{
+        margin-top: 0px;
+    }
+    #conteneur .personnage #sophiePaulcontenu{
+        padding-top: 0px;
+    }
+} 
+/* }
 #conteneur.personnage img#sophie{
     width:130px;
     margin: auto;
@@ -48,16 +87,11 @@ p#sophiePaulcontenu.contenu{
     height:300px;;
     margin: 0 auto 10px;
     display: flex;
-}
+} */
 
 
-@media (min-width: 768px)
-{
-    .personnage{
-        width: 30%;
-    }
    
-    p.contenu#sophiePaulcontenu{
+    /*p.contenu#sophiePaulcontenu{
         margin-top: 10px;
     }
     .personnage img#sophie2{
@@ -70,6 +104,6 @@ p#sophiePaulcontenu.contenu{
         margin-top: 20px;
     }
     
-}  
+  */
  
    
