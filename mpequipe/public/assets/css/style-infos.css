@@ -1,26 +1,109 @@
-
 body{
     background-color:#cac6c6;
+    width:100%;
 }
-#conteneur, #conteneur1{
-    width: 960px;
-    -webkit-columns: 3 auto;
-    -moz-columns: 3 auto;
-    columns: 3 auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    column-gap: 40px;
-
- }
-#conteneur p, #conteneur p{
-    margin-left: 20px;
-    margin-right: 20px; 
-}
-p{
+h3{
+    margin-top:10px;
     text-align: center;
+    color: #546a79;
 }
-#sophie{
-    margin-top: 80px;
-    justify-content: center;
+#conteneur{
+    display: flex;
+    flex-wrap: wrap;
+ }
+.personnage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
 }
+.contenu {
+    text-align: center;
+    margin:  auto;
+    padding: 20px;
+    width: 80%;
+}   
+img{
+    width: 90%;
+    margin: auto;
+}
+@media (min-width: 375px)
+{
+    #conteneur .personnage img{
+        width:  90%;
+        margin: 10px auto;
+    }
+} 
+@media (min-width: 425px)
+{
+    #conteneur .personnage img{
+        width:  90%;
+        margin: 10px auto;
+    }
+} 
+    @media (min-width: 768px)
+{
+    .personnage{
+        width: 50%;
+        margin: auto;
+    }
+    #conteneur .personnage #sophie2contenu{
+        padding-top: 0;
+    }
+} 
+@media (min-width: 1024px)
+{
+    .personnage{
+        width: 30%;
+    }
+    .personnage img #sophiePaul{
+        margin-top: 0px;
+    }
+    #conteneur .personnage #sophiePaulcontenu{
+        padding-top: 0px;
+    }
+} 
+/* }
+#conteneur.personnage img#sophie{
+    width:130px;
+    margin: auto;
+}
+img#sophie{
+    margin-top: 40px;
+}
+img#sophie2{
+    width:160px;
+    margin:auto;
+}
+#sophiecontenu.contenu{
+    margin-top: 30px;
+}
+p#sophiePaulcontenu.contenu{
+    margin-top: 20px;
+}
+#conteneur .personnage img{
+    object-fit: contain;
+    max-width:100%;
+    height:300px;;
+    margin: 0 auto 10px;
+    display: flex;
+} */
 
+
+   
+    /*p.contenu#sophiePaulcontenu{
+        margin-top: 10px;
+    }
+    .personnage img#sophie2{
+        margin-top: 0px;
+    }
+    .personnage img#hayatMario{
+        margin-top: 30px;
+    }
+    p.contenu#hayatMariocontenu{
+        margin-top: 20px;
+    }
+    
+  */
+ 
+   
