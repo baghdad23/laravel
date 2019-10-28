@@ -30,12 +30,10 @@
 <main>
     <div class="espaceMembreForm">
         <h4>MODIFIER LEVEL MEMBRE</h4>
-        <form method="POST" action="" enctype="multipart/form-data">  
-            <input type="texte" name="name" placeholder="entrez votre nom" required>
-            <input type="email" name="email" placeholder="entrez votre email" required>
-            <input type="password" name="pasword" placeholder="entrez votre mot de passe" required>
-            <input type="file" name="photo">
-            <button type="submit">CHANGER DONNÉES</button>
+        <form method="POST" action="{{ route('register') }}">  
+            <input type="email" name="email" placeholder="entrez email du membre" required>
+            <input type="texte" name="level" placeholder="entrez level du membre" required>
+            <button type="submit">CHANGER LEVEL</button>
             @csrf
         </form>
     </div>
