@@ -24,7 +24,16 @@ a {
 }
 #logo img {
     width: 200px;
-}
+    width: 200px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    animation: cos 3s infinite linear alternate ;
+  }
+  @keyframes cos {
+    0% {transform: rotate(-45deg); left: -50px}
+    100% {transform: rotate(45deg); left: 50px}
+  }
 #boutonsConnexion {
     display: flex;
     flex-wrap: wrap;
